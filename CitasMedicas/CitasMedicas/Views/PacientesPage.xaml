@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CitasMedicas.Views.PacientesPage"
+             Title="Pacientes">
+    
+    
+    <ListView x:Name="listpacientes" HasUnevenRows="True" ItemSelected="Paciente_Selected">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Orientation="Vertical" Margin="15">
+                        <Image Source="pacientes.png"/>
+                        <Label Text="Documento de Identidad"/>
+                        <Label Text="{Binding Cedula}"/>
+                        <Label Text="Nombre"/>
+                        <Label Text="{Binding Nombre}"/>
+                        <Label Text="Apellido"/>
+                        <Label Text="{Binding Apellido}"/>
+                        <Label Text="Edad"/>
+                        <Label Text="{Binding Edad}"/>
+                        <Label Text="Fechas de nacimiento"/>
+                        <Label Text="{Binding FechaNacim}"/>
+                        <Label Text="Grupo sanguineo"/>
+                        <Label Text="{Binding Rh}"/>
+                        <Label Text="Telefono"/>
+                        <Label Text="{Binding Telefono}"/>
+                        <Label Text="Dirección"/>
+                        <Label Text="{Binding Direccion}"/>
+                        <Label Text="Ciudad"/>
+                        <Label Text="{Binding Ciudad}"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

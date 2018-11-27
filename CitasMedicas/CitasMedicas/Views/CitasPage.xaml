@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CitasMedicas.Views.CitasPage"
+             Title="Detalle de citas medicas">
+    
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Margin="15">
+            <Image Source="pacientes.png"/>
+            <Label Text="Documento de Identidad"/>
+            <Label Text="806317"/>
+            <Label Text="Nombre"/>
+            <Label Text="Alejandro Gutierrez}"/>
+            <Label Text="Edad"/>
+            <Label Text="27"/>
+            <Label Text="Fecha de la cita"/>
+            <Label Text="05-12-2018"/>
+            <Label Text="Medico"/>
+            <Label Text="Armando Paredes"/>
+            <Label Text="EPS"/>
+            <Label Text="Sura"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
